@@ -9,6 +9,7 @@ body {
 }
 
 .top-section-wrapper {
+  overflow: hidden;
   background-color: #001d37;
   padding-left: 16px;
   padding-right: 16px;
@@ -20,6 +21,12 @@ body {
   padding-bottom: 139px;
   max-width: 1066px;
   margin: 0 auto;
+  position: relative;
+}
+
+.actual-top-content {
+  z-index: 2;
+  position: relative;
 }
 
 .top-section h1 {
@@ -80,4 +87,28 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 16px;
+}
+
+.circle {
+  width: 617px;
+  height: 617px;
+  background-color: #d660ff;
+  opacity: 0.85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: 62px;
+  right: -390px;
+}
+
+.circle-two {
+  width: 617px;
+  height: 617px;
+  background-color: #6079ff;
+  opacity: 0.85;
+  border-radius: 50%;
+  filter: blur(150px);
+  position: absolute;
+  top: -365px;
+  left: -123px;
 }
