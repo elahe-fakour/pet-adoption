@@ -144,8 +144,33 @@ body {
 
 .site-footer p {
   text-align: center;
-  color: #A6A6A6;
+  color: #a6a6a6;
   font-size: 0.875rem;
   margin: 0;
   padding: 0 0 65px 0;
+}
+
+.list-of-pets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 34px;
+}
+
+.pet-card {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 165px 1fr;
+  border-radius: 20px;
+  border: 1px solid #f3f3f3;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.08);
+}
+
+.pet-card-photo {
+  order: 1;
+  grid-row: 1;
+}
+
+.pet-card-photo img {
+  width: 100%;
+  display: block;
 }
