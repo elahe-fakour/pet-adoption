@@ -4,6 +4,11 @@ html {
   padding: 0;
   background-color: white;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Source Sans 3", sans-serif;
 }
@@ -57,12 +62,12 @@ body {
   text-decoration: none;
   padding: 13px 25px;
   border-radius: 1000px;
-  transition: background-color .3s ease-out, border .3s ease-out, color .3s ease-out;
+  transition: background-color 0.3s ease-out, border 0.3s ease-out, color 0.3s ease-out;
 }
 
 .our-btn:hover {
-  background-color: #2E40E2;
-  border: 2px solid #2E40E2;
+  background-color: #2e40e2;
+  border: 2px solid #2e40e2;
 }
 
 .our-btn--outline {
